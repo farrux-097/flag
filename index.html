@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>proyekt</title>
+</head>
+<body>
+  <header class="py-5 shadow-md">
+    <div class="container mx-auto flex items-center justify-between">
+      <a class="font-bold text-[30px]" href="/">Countires</a>
+      <div class="flex item-center gap-5">
+        <button class="w-[50] h-[50px] border-[1px] border-red-400 text-red-400 rounded-[50%] flex items-center justify-center">
+          0
+          <img src="./images/like.svg" alt="like-icon" width="25" height="25">
+        </button>
+        <button class="w-[50] h-[50px] border-[1px] border-green-400 text-red-400 rounded-[50%] flex items-center justify-center">
+          0
+          <img src="./images/basket.svg" alt="like-icon" width="25" height="25">
+        </button>
+        <button class="w-[50] h-[50px] border-[1px] border-black-400 text-red-400 rounded-[50%] flex items-center justify-center">
+          <img src="./images/moon.svg" alt="like-icon" width="25" height="25">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+      <section class="py-5">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between">
+            <input
+            class=" search-input p-3 rounded-full bg-violet-100 text-xl border-2 border-purple-500 p-2 placeholder-purple-400 focus:text-violet-950 focus:border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            placeholder="Serach countires ..."
+/>
+            <select class="country-select p-3 shadow-md rounded-[10px] border-[1px] w-[250px] border-slate-500 ">
+                <option >All</option>
+            </select>
+          </div>
+          <ul class=" p-3 countries-list flex flex-wrap justify-between gap-10 mt-10">
+          </ul>
+        </div>
+      </section>
+  </main>
+
+
+
+
+
+
+  <script src="./js/countires.js"></script>
+  <script src="./js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
